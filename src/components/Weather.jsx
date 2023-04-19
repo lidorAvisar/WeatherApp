@@ -16,7 +16,6 @@ export default function Weather() {
     console.log(12121);
     setData(data);
     setEmpty(data ? false : true)
-    console.log(empty);
   }
 
   useEffect(() => {
@@ -28,7 +27,6 @@ export default function Weather() {
   return (
     <div className='image-home'>
       {empty ? <div style={{ height: '400px' }}> <h1 className='text-white text-center pt-5'>no results. . .</h1></div> :
-
         <div style={{ paddingTop: '50px' }}>
           <h1 style={{ fontSize: '50px' }}>The Weather in {data.name}<CiLocationOn style={{ fontSize: '55px' }} /></h1>
           <div >
