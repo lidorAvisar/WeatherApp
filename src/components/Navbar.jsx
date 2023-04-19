@@ -19,14 +19,7 @@ export default function Navbar() {
           }}
           style={{ height: '40px', borderRadius: '10px 0px 0px 10px', border: 'none', paddingLeft: '10px' }} type="search" placeholder='Search any location . . .' />
         <button onClick={(e)=>{
-          if(inputData){
             nav(`/search/${inputData.current.value}`)
-            console.log(11);
-          }
-          else{ 
-          console.log(0);
-        }
-          
           }} className='bg-success' style={{ height: '40px', width: '50px', display: 'flex', justifyContent: 'center', alignItems: 'center', borderRadius: '0px 10px 10px 0px', border: 'none' }}><span style={{ fontSize: '30px', display: 'flex' }}><FcSearch /></span></button>
       </div>
     </div>
