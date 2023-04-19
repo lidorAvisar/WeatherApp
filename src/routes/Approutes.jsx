@@ -10,7 +10,7 @@ export default function Approutes() {
             <Routes>
                 <Route path='/' element={<Layout/>}>
                     <Route index element={<Weather/>}/>
-                    <Route/>
+                    <Route path='/search/:s' element={<Weather/>}/>
                 </Route>
             </Routes>
         </Router>
